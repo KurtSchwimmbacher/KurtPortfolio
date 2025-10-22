@@ -1,6 +1,18 @@
+'use client';
+
 import React from 'react';
 
 const Navbar = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <nav className="flex justify-between items-center px-8 py-6">
       {/* Logo */}
@@ -10,18 +22,18 @@ const Navbar = () => {
       
       {/* Navigation Links */}
       <div className="flex space-x-8">
-        <a 
-          href="#work" 
+        <button 
+          onClick={() => scrollToSection('work')}
           className="text-[#2e2e2e] hover:text-[#2e2e2e]/70 transition-colors duration-200"
         >
           Work
-        </a>
-        <a 
-          href="#about" 
+        </button>
+        <button 
+          onClick={() => scrollToSection('about')}
           className="text-[#2e2e2e] hover:text-[#2e2e2e]/70 transition-colors duration-200"
         >
           About
-        </a>
+        </button>
       </div>
     </nav>
   );

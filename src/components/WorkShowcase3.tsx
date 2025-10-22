@@ -45,7 +45,7 @@ const WorkShowcase3 = () => {
                     Accessible, engaging, and community-driven. </p>
                 <br />
                 <p>Thank you to my lecturers for their support and guidance.</p>
-                <a 
+                <a style={{fontSize: '16px', color: '#1800f4'}}
                 href="https://finalists.loeries.com/Finalists.aspx?link=viewstation_finalist&id=185923" 
                 target="_blank" 
                 rel="noopener noreferrer"

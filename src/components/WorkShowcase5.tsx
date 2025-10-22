@@ -32,7 +32,7 @@ const WorkShowcase5 = () => {
             <h3 className="text-xl font-bold text-[#2e2e2e]">
               Code & Cloud Academy / Dotnet & Vue Electron App 
             </h3>
-            <div className='text-xs text-[#FF4D00]'> 
+            <div className='text-xs text-[#1800f4]'> 
                 <p>Group Work • Students Backend • Students Frontend • Timetable Generation</p>
             </div>
             <div className="text-sm space-y-1 text-[#2e2e2e]">

@@ -24,7 +24,7 @@ const WorkShowcase4 = () => {
               <h3 className="text-xl font-bold text-[#2e2e2e]">
                 Safely / React Native App
               </h3>
-              <div className='text-xs text-[#FF4D00]'> 
+              <div className='text-xs text-[#1800f4]'> 
                   <p>Solo Work</p>
               </div>
               <div className="text-sm space-y-1 text-[#2e2e2e]">
