@@ -22,7 +22,7 @@ const WorkShowcase4 = () => {
           <div className="col-span-12 md:col-span-4 order-2 md:order-1">
             <div className="space-y-2">
               <h3 className="text-xl font-bold text-[#2e2e2e]">
-                Safely / React Native App
+                Safely - React Native App
               </h3>
               <div className='text-xs text-[#1800f4]'> 
                   <p>Solo Work</p>

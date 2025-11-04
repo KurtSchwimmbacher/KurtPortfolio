@@ -39,10 +39,8 @@ const WorkShowcase3 = () => {
                 <p>Solo Work</p>
             </div>
             <div className="text-sm space-y-1 text-[#2e2e2e]">
-              <p>SignStory reimagines sign language learning through play.
-                    Gamified challenges make practice rewarding, while storytelling builds emotional connection.
-                    The app aims to bridge communication barriers between deaf and hearing users.
-                    Accessible, engaging, and community-driven. </p>
+              <p>SignStory started from a documentary of a father and son learning sign language together.
+                After years of drumming the idea of losing my hearing is something that has scared me. SignStory is an app to help people learn sign language in a low pressure, fun, and social way. </p>
                 <br />
                 <p>Thank you to my lecturers for their support and guidance.</p>
                 <a style={{fontSize: '16px', color: '#1800f4'}}

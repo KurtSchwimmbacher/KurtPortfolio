@@ -9,7 +9,7 @@ const WorkShowcase5 = () => {
           <div 
             className="h-[420px] md:h-[700px] rounded-lg bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/assets/projects/CodeCloud/CC1.png)'
+              backgroundImage: 'url(/assets/projects/Mozaic/Mozaic2.png)'
             }}
           >
             {/* CC1 image as background */}
@@ -21,7 +21,7 @@ const WorkShowcase5 = () => {
           <div 
             className="aspect-square md:mb-6 rounded-lg bg-cover bg-center bg-no-repeat"
             style={{
-              backgroundImage: 'url(/assets/projects/CodeCloud/CC2.png)'
+              backgroundImage: 'url(/assets/projects/Mozaic/Mozaic1.png)'
             }}
           >
             {/* CC2 image as background */}
@@ -30,25 +30,23 @@ const WorkShowcase5 = () => {
           {/* Text Content Below Right Block */}
           <div className="space-y-2">
             <h3 className="text-xl font-bold text-[#2e2e2e]">
-              Code & Cloud Academy / Dotnet & Vue Electron App 
+              Mozaic - Responsive E-commerce Site
             </h3>
             <div className='text-xs text-[#1800f4]'> 
-                <p>Group Work • Students Backend • Students Frontend • Timetable Generation</p>
+                <p>Group Work • Research • Wireframes • UI Designs</p>
             </div>
             <div className="text-sm space-y-1 text-[#2e2e2e]">
-              <p>Built with .NET, Vue, and Electron, Code & Cloud Academy is an all-in-one school management platform.
-It supports students, lecturers, and admins with organized modules, assignments, and announcements.
-Timetables and course tools update seamlessly across roles.
-A modern digital classroom that makes education easier to run and easier to experience.</p>
+              <p>Mozaic is an E-commerce platform built with informal traders in mind. It's designed to lower the barrier to entry for traders to start selling online, while providing all the tools necessary to manage their business online.
+              </p>
               <br />
               <p>Thank you to my lecturers for their support and guidance.</p>
               <a 
-                href="https://github.com/Mwape-Kurete/CC-School-Frontend" 
+                href="https://www.behance.net/gallery/237707399/Mozaic-Ecommerce-site" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-[#2e2e2e] hover:text-[#2e2e2e]/70 transition-colors duration-200"
               >
-                Github Repository
+                Full Case Study
                 <svg 
                   className="w-3 h-3" 
                   fill="none" 

@@ -25,8 +25,8 @@ const Hero = () => {
           </div>
           
           {/* Right - Description */}
-          <div className="text-lg text-[#2e2e2e] text-right max-w-sm leading-relaxed">
-            South African designer and developer based in Pretoria focused on creating interactive digital experiences and stunning visuals.
+          <div className="text-lg text-[#2e2e2e] text-right max-w-lg leading-relaxed">
+            I'm Kurt, a recent UX and Development graduate based in Pretoria. I care about solving problems that are true to their causes and while I'm there, why not make it pretty too?
           </div>
         </div>
       </div>
