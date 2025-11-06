@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
@@ -16,8 +17,14 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center px-8 py-6">
       {/* Logo */}
-      <div className="text-2xl font-medium text-[#2e2e2e]">
-        ks
+      <div className="flex items-center">
+        <Image 
+          src="/Kurt_Logo.svg" 
+          alt="Kurt Logo" 
+          width={62} 
+          height={62}
+          className="w-auto h-8 md:h-10"
+        />
       </div>
       
       {/* Navigation Links */}
