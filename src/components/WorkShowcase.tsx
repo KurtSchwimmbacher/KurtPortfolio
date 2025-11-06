@@ -2,7 +2,7 @@ import React from 'react';
 
 const WorkShowcase = () => {
   return (
-    <section id="work" className="px-4 md:px-8 py-20 md:py-32">
+    <section className="px-4 md:px-8 py-20 md:py-32">
       <div className="grid grid-cols-12 md:grid-cols-12 gap-6 md:gap-8">
         {/* Left Content Block - 4 columns */}
         <div className="col-span-12 md:col-span-4 order-2 md:order-1">

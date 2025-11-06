@@ -16,6 +16,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <TitleComp 
+        id="work"
         year='2nd year' 
         futureDirection='I knew where my interests lied, but the execution needed some work.' />
       <WorkShowcase3 />  

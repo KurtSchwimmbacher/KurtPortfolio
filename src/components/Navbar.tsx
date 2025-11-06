@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import { StaggeredMenu } from './StaggeredMenu';
 
 const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
@@ -14,35 +14,52 @@ const Navbar = () => {
     }
   };
 
+  const menuItems = [
+    {
+      label: 'Home',
+      link: '#home',
+      ariaLabel: 'Navigate to Home section'
+    },
+    {
+      label: 'Work',
+      link: '#work',
+      ariaLabel: 'Navigate to Work section'
+    },
+    {
+      label: 'About',
+      link: '#about',
+      ariaLabel: 'Navigate to About section'
+    }
+  ];
+
+  const handleItemClick = (item: { label: string; link: string }) => {
+    const sectionId = item.link.replace('#', '');
+    scrollToSection(sectionId);
+  };
+
   return (
-    <nav className="flex justify-between items-center px-8 py-6">
-      {/* Logo */}
-      <div className="flex items-center">
-        <Image 
-          src="/Kurt_Logo.svg" 
-          alt="Kurt Logo" 
-          width={62} 
-          height={62}
-          className="w-auto h-8 md:h-10"
-        />
-      </div>
-      
-      {/* Navigation Links */}
-      <div className="flex space-x-8">
-        <button 
-          onClick={() => scrollToSection('work')}
-          className="text-[#2e2e2e] hover:text-[#2e2e2e]/70 transition-colors duration-200"
-        >
-          Work
-        </button>
-        <button 
-          onClick={() => scrollToSection('about')}
-          className="text-[#2e2e2e] hover:text-[#2e2e2e]/70 transition-colors duration-200"
-        >
-          About
-        </button>
-      </div>
-    </nav>
+    <StaggeredMenu
+      position="right"
+      colors={['#f7f7f7', '#1800f4']}
+      items={menuItems.map(item => ({
+        ...item,
+        link: '#',
+        onClick: () => handleItemClick(item)
+      })) as any}
+      displaySocials={false}
+      displayItemNumbering={false}
+      logoUrl="/Kurt_Logo.svg"
+      menuButtonColor="#2e2e2e"
+      openMenuButtonColor="#2e2e2e"
+      accentColor="#1800f4"
+      changeMenuColorOnOpen={false}
+      isFixed={true}
+      className=""
+      onMenuOpen={() => {}}
+      onMenuClose={() => {
+        // Optional: Add any cleanup or state updates when menu closes
+      }}
+    />
   );
 };
 

@@ -122,7 +122,7 @@ const Hero = () => {
   }, [gridSize, maxActive, animationDuration, blueHoldDuration, isInitialLoad]);
 
   return (
-    <div className="min-h-screen flex flex-col relative overflow-hidden">
+    <div id="home" className="min-h-screen flex flex-col relative overflow-hidden">
       {/* Grid Background */}
       <div 
         className="absolute inset-0 grid pointer-events-none"
