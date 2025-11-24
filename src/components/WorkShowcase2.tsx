@@ -2,7 +2,7 @@ import React from 'react';
 
 const WorkShowcase2 = () => {
   return (
-    <section className="px-4 md:px-8 py-20 md:py-32">
+    <section className="px-4 md:px-8 py-12 md:py-16">
       <div className="grid grid-cols-12 md:grid-cols-12 gap-6 md:gap-8">
         {/* First Image Section - 4 columns */}
         <div className="col-span-12 md:col-span-4 order-2 md:order-1">
@@ -92,7 +92,7 @@ Designed for mobile and Apple Watch; inclusive, conscious, and simple.</p>
         {/* Third Image Section - 4 columns (taller) */}
         <div className="col-span-12 md:col-span-4 order-1 md:order-3">
           <div 
-            className="h-[420px] md:h-[800px] rounded-lg bg-cover bg-center bg-no-repeat"
+            className="h-[300px] md:h-[600px] rounded-lg bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: 'url(/assets/projects/thriftr/Thriftr3.png)'
               //url(/assets/projects/authentica/Authentica2.png)

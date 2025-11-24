@@ -16,8 +16,7 @@ const AboutMe = () => {
           <div className="col-span-12 md:col-span-5 md:col-start-8">
             <div className="text-right">
               <p className="text-sm text-[#2e2e2e] leading-relaxed">
-              My names Kurt, I'm a third year UX and development student at the Open Window, graduating in 2025. I specialise in crafting intuitive front end designs, both in design and in code.
-              I take pride in addressing complex issues. Finding what users core pains are and addressing them in their most simple form. I also strive to let the users voice shown through in all my designs, creating authentic experiences. 
+              {/* I specialise in crafting intuitive front end designs, both in design and in code. Based in Pretoria, South Africa. */}
               </p>
             </div>
           </div>

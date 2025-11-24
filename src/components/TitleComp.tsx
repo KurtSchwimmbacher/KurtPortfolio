@@ -14,7 +14,7 @@ const TitleComp: React.FC<TitleCompProps> = ({ year, futureDirection, id }) => {
     : 'What\'s next?';
   
   return (
-    <section id={id} className="px-4 md:px-8 pt-20 md:pt-32 pb-0 md:pb-0">
+    <section id={id} className="px-4 md:px-8 pt-20 md:pt-32 pb-12 md:pb-16">
       <div className="grid grid-cols-12 md:grid-cols-12 gap-6 md:gap-8">
         <div className="col-span-12">
           <h2 className="text-5xl md:text-7xl font-bold text-[#2e2e2e] text-left">

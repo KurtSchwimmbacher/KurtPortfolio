@@ -2,12 +2,12 @@ import React from 'react';
 
 const WorkShowcase5 = () => {
   return (
-    <section className="px-4 md:px-8 py-20 md:py-32">
+    <section className="px-4 md:px-8 py-24 md:py-32">
       <div className="grid grid-cols-12 md:grid-cols-12 gap-6 md:gap-8">
         {/* Left Content Block - 8 columns (mirrored from WorkShowcase) */}
         <div className="col-span-12 md:col-span-8 order-1">
           <div 
-            className="h-[420px] md:h-[700px] rounded-lg bg-cover bg-center bg-no-repeat"
+            className="h-[480px] md:h-[800px] rounded-lg bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: 'url(/assets/projects/Mozaic/Mozaic2.png)'
             }}

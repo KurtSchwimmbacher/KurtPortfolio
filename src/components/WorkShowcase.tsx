@@ -2,7 +2,7 @@ import React from 'react';
 
 const WorkShowcase = () => {
   return (
-    <section className="px-4 md:px-8 py-20 md:py-32">
+    <section className="px-4 md:px-8 py-12 md:py-16">
       <div className="grid grid-cols-12 md:grid-cols-12 gap-6 md:gap-8">
         {/* Left Content Block - 4 columns */}
         <div className="col-span-12 md:col-span-4 order-2 md:order-1">
@@ -59,7 +59,7 @@ const WorkShowcase = () => {
         {/* Right Content Block - 8 columns */}
         <div className="col-span-12 md:col-span-8 order-1 md:order-2">
           <div 
-            className="h-[420px] md:h-[700px] rounded-lg bg-cover bg-center bg-no-repeat"
+            className="h-[300px] md:h-[500px] rounded-lg bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: 'url(/assets/projects/authentica/Authentica2.png)'
             }}

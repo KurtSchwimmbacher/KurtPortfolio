@@ -2,12 +2,12 @@ import React from 'react';
 
 const WorkShowcase4 = () => {
   return (
-    <section className="px-4 md:px-8 py-20 md:py-32">
+    <section className="px-4 md:px-8 py-24 md:py-32">
       <div className="space-y-6 md:space-y-8">
         {/* Full Width Block - 12 columns */}
         <div className="w-full">
           <div 
-            className="h-[220px] md:h-[400px] rounded-lg bg-cover bg-center bg-no-repeat"
+            className="h-[280px] md:h-[500px] rounded-lg bg-cover bg-center bg-no-repeat"
             style={{
               backgroundImage: 'url(/assets/projects/safely/Safely1.png)'
             }}
