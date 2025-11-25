@@ -1,16 +1,45 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
-import WorkShowcase from '@/components/WorkShowcase';
-import WorkShowcase1 from '@/components/WorkShowcase1';
-import WorkShowcase2 from '@/components/WorkShowcase2';
-import WorkShowcase3 from '@/components/WorkShowcase3';
-import WorkShowcase4 from '@/components/WorkShowcase4';
-import WorkShowcase5 from '@/components/WorkShowcase5';
+import ScrollVelocity from '@/components/ScrollVelocity';
+import BentoGrid from '@/components/BentoGrid';
 import AboutMe from '@/components/AboutMe';
-import TitleComp from '@/components/TitleComp';
-import SectionDivider from '@/components/SectionDivider';
-import YearReflection from '@/components/YearReflection';
 
+// Project data for the bento grid
+const projects = [
+  {
+    id: 'ascendai',
+    title: 'AscendAI - AI powered React Native App',
+    description: 'Helps colorblind climbers identify legal holds and grade routes independently. Built with AI-powered hold recognition, it scans climbing routes and filters holds by color to match route regulations.',
+    tag: 'Solo Work',
+    image: '/assets/projects/AscendAI/AscendAI1.png',
+    link: '/projects/ascendai', // Placeholder - will implement routing later
+    featured: true,
+  },
+  {
+    id: 'thriftr',
+    title: 'ThriftR - UX & UI Design',
+    description: 'Helps thrifters shop with intention, not impulse. Built from deep community research, it turns thrift trips into mindful, budget-friendly experiences.',
+    tag: 'Solo Work',
+    image: '/assets/projects/thriftr/Thriftr1.png',
+    link: '/projects/thriftr',
+  },
+  {
+    id: 'authentica',
+    title: 'Authentica - Service Design',
+    description: 'A service design project focused on creating authentic experiences that solve problems true to their causes.',
+    tag: 'Solo Work',
+    image: '/assets/projects/authentica/Authentica3.png',
+    link: '/projects/authentica',
+  },
+  {
+    id: 'safely',
+    title: 'Safely - React Native App',
+    description: 'A React Native application designed with safety and user experience in mind.',
+    tag: 'Solo Work',
+    image: '/assets/projects/safely/Safely1.png',
+    link: '/projects/safely',
+  },
+];
 
 export default function Home() {
   return (
@@ -18,36 +47,47 @@ export default function Home() {
       <Navbar />
       <Hero />
       
-      {/* 2nd Year Section */}
-      <TitleComp 
-        id="work"
-        year='2nd year' 
-        futureDirection='I knew where my interests lied, but the execution needed some work.' />
-      <WorkShowcase3 /> {/* SignStory */}
-      {/* <YearReflection text="Looking back at my second year, I realized I was on the right track—accessibility and inclusive design mattered deeply to me. But I learned that having the right idea isn't enough; the execution and attention to detail make all the difference. This project taught me to be more intentional with every design decision." /> */}
-      
-      <SectionDivider />
-      
-      {/* 3rd Year Section - Projects in chronological order */}
-      <TitleComp 
-        year='3rd year' 
-        futureDirection='My research deepened, but I let the visuals get away from me' />
-      <WorkShowcase2 /> {/* ThriftR */}
-      <WorkShowcase /> {/* Authentica */}
-      <WorkShowcase4 /> {/* Safely */}
-      <WorkShowcase5 /> {/* Mozaic */}
-      <WorkShowcase1 /> {/* AscendAI - Latest */}
-      {/* <YearReflection text="My third year was about depth and breadth. I deepened my research skills, explored multiple problem spaces, and learned to build functional applications. While I sometimes let visual polish slip in favor of functionality, I discovered my true strength lies in identifying overlooked problems and crafting solutions that genuinely empower people. Each project reinforced that design isn't just about making things pretty—it's about removing barriers and creating authentic experiences." /> */}
-      
-      <SectionDivider />
-      
-      {/* Future Direction */}
-      <TitleComp 
-        year='future'
-        futureDirection="I want to continue solving niche problems that impact real lives. Whether it's helping colorblind climbers navigate routes, enabling blind thrifters to shop independently, or empowering informal traders to access digital commerce. I'm drawn to problems that others might overlook. My goal is to keep finding those overlooked barriers and crafting solutions that genuinely make a difference in people's everyday experiences." />
-      
-      <AboutMe />
+      {/* Scroll Velocity as Section Breaker */}
+      <div className="py-4 md:py-8 bg-[#f7f7f7]">
+        <ScrollVelocity 
+          texts={['Selected Work', '2024/2025']}
+          velocity={0.5}
+          className="text-xl md:text-[6rem] font-bold text-[#2e2e2e]"
+        />
+      </div>
 
+      {/* Bento Grid of Projects */}
+      <BentoGrid 
+        projects={projects}
+        viewAllLink="/projects"
+      />
+
+
+      {/* Scroll Velocity as Section Breaker */}
+      <div className="py-2 md:py-4 bg-[#f7f7f7]">
+        <ScrollVelocity 
+          texts={['About Me']}
+          velocity={0.5}
+          className="text-xl md:text-[6rem] font-bold text-[#2e2e2e]"
+        />
+      </div>
+
+      {/* 
+        NOTE: Existing showcase components preserved below for later use in /projects page
+        Components kept intact:
+        - WorkShowcase (Authentica)
+        - WorkShowcase1 (AscendAI)
+        - WorkShowcase2 (ThriftR)
+        - WorkShowcase3 (SignStory)
+        - WorkShowcase4 (Safely)
+        - WorkShowcase5 (Mozaic)
+        - TitleComp
+        - SectionDivider
+        - AboutMe
+        - YearReflection
+      */}
+
+      <AboutMe />
     </div>
   );
 }
