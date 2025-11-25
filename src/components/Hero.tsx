@@ -1,58 +1,11 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const Hero = () => {
-  const [isMobile, setIsMobile] = useState(false);
-  
-  // Responsive grid size - smaller on mobile for better performance
-  const gridSize = isMobile ? 8 : 10;
-
-  // Detect mobile on mount
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
 
   return (
-    <div id="home" className="min-h-screen flex flex-col relative overflow-hidden">
-      {/* Grid Background */}
-      <div 
-        className="absolute inset-0 grid pointer-events-none"
-        style={{
-          gridTemplateColumns: `repeat(${gridSize}, 1fr)`,
-          gridTemplateRows: `repeat(${gridSize}, 1fr)`,
-          gap: '0',
-          zIndex: 0,
-          backgroundColor: '#1800f4', // Blue background to prevent white lines showing through
-        }}
-      >
-        {Array.from({ length: gridSize * gridSize }).map((_, index) => (
-          <div
-            key={index}
-            className="relative"
-            style={{
-              aspectRatio: '1 / 1',
-              overflow: 'hidden',
-            }}
-          >
-            {/* Static white face */}
-            <div
-              className="absolute inset-0 bg-[#f7f7f7]"
-              style={{
-                top: '-1px',
-                left: '-1px',
-                right: '-1px',
-                bottom: '-1px',
-              }}
-            />
-          </div>
-        ))}
-      </div>
+    <div id="home" className="min-h-screen flex flex-col relative overflow-hidden bg-[#f7f7f7]">
 
       {/* Main Hero Section */}
       <div 

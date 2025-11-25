@@ -24,7 +24,7 @@ export default function Home() {
         year='2nd year' 
         futureDirection='I knew where my interests lied, but the execution needed some work.' />
       <WorkShowcase3 /> {/* SignStory */}
-      <YearReflection text="Looking back at my second year, I realized I was on the right track—accessibility and inclusive design mattered deeply to me. But I learned that having the right idea isn't enough; the execution and attention to detail make all the difference. This project taught me to be more intentional with every design decision." />
+      {/* <YearReflection text="Looking back at my second year, I realized I was on the right track—accessibility and inclusive design mattered deeply to me. But I learned that having the right idea isn't enough; the execution and attention to detail make all the difference. This project taught me to be more intentional with every design decision." /> */}
       
       <SectionDivider />
       
