@@ -1,11 +1,50 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
+
+// Extend Window interface for Unicorn Studio
+declare global {
+  interface Window {
+    UnicornStudio?: {
+      isInitialized: boolean;
+      init?: () => void;
+    };
+  }
+}
 
 const Hero = () => {
+  useEffect(() => {
+    // Initialize Unicorn Studio if not already initialized
+    if (!window.UnicornStudio) {
+      window.UnicornStudio = { isInitialized: false };
+      const script = document.createElement('script');
+      script.src = 'https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.35/dist/unicornStudio.umd.js';
+      script.onload = function() {
+        if (window.UnicornStudio && !window.UnicornStudio.isInitialized && window.UnicornStudio.init) {
+          window.UnicornStudio.init();
+          window.UnicornStudio.isInitialized = true;
+        }
+      };
+      (document.head || document.body).appendChild(script);
+    } else if (!window.UnicornStudio.isInitialized && window.UnicornStudio.init) {
+      window.UnicornStudio.init();
+      window.UnicornStudio.isInitialized = true;
+    }
+  }, []);
 
   return (
     <div id="home" className="min-h-screen flex flex-col relative overflow-hidden bg-[#f7f7f7]">
+
+      {/* Unicorn Studio Background Design */}
+      <div 
+        className="absolute inset-0 w-full h-full z-0 pointer-events-none"
+        aria-hidden="true"
+      >
+        <div 
+          data-us-project="oeEKYoyInw55QKIJLWYp" 
+          className="w-full h-full"
+        />
+      </div>
 
       {/* Main Hero Section */}
       <div 
