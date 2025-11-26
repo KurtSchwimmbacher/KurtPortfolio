@@ -20,3 +20,5 @@ const YearReflection: React.FC<YearReflectionProps> = ({ text }) => {
 
 export default YearReflection;
 
+
+

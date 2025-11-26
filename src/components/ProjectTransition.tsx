@@ -20,3 +20,5 @@ const ProjectTransition: React.FC<ProjectTransitionProps> = ({ text }) => {
 
 export default ProjectTransition;
 
+
+

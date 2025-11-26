@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <section id="about" className="px-4 md:px-8 py-20 md:py-32">
+    <section id="about" className="px-4 md:px-8 py-2 md:py-4">
       <div className="min-h-[600px] flex flex-col">
         {/* Top Whitespace */}
         <div className="flex-1"></div>
